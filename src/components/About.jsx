@@ -8,8 +8,8 @@ const About = () => {
         { name: 'HTML', uv: 100, pv: 2400, amt: 2400 },
         { name: 'CSS', uv: 95, pv: 2400, amt: 2400 },
         { name: 'JavaScript', uv: 90, pv: 2400, amt: 2400 },
-        { name: 'MySQL', uv: 85, pv: 2400, amt: 2400 },
-        { name: 'T-CSS', uv: 50, pv: 2400, amt: 2400 },
+        { name: 'MySQL', uv: 70, pv: 2400, amt: 2400 },
+        { name: 'T-CSS', uv: 85, pv: 2400, amt: 2400 },
         { name: 'React.js', uv: 40, pv: 2400, amt: 2400 },
 
     ];
@@ -18,7 +18,7 @@ const About = () => {
     return (
 
 
-        <section className="p-8 m-8">
+        <section className="p-8 m-8 font-normal">
             <div className="container mx-auto flex flex-wrap">
                 <div className="w-full md:w-1/2 p-4">
                     <h2 className="text-2xl font-bold mb-2">About Me</h2>
