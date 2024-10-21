@@ -29,11 +29,9 @@ const About = () => {
                         transition={{ type: 'spring', stiffness: 50 }}
                     >
                         <p className="text-black font-medium text-1xl ">
-                            I'm a passionate and motivated web developer currently honing my skills in full-stack development, with a strong focus on the MERN stack (MongoDB, Express.js, React.js, and Node.js). I have a solid foundation in front-end technologies like HTML, CSS, and JavaScript (ES5 & ES6), and I've worked with frameworks such as Bootstrap and Tailwind CSS to create responsive and visually appealing web applications. Alongside my web development journey, I've also gained experience in Firebase for backend services and user authentication.
+                        I'm a passionate web developer focusing on full-stack development, particularly the MERN stack (MongoDB, Express.js, React.js, Node.js). I have strong front-end skills in HTML, CSS, JavaScript (ES5 & ES6), and experience with frameworks like Bootstrap and Tailwind CSS for creating responsive, visually appealing web applications. I also have hands-on experience with Firebase for backend services and user authentication.
 
-                            Learning new technologies excites me, and I'm continuously striving to expand my knowledge base. Currently, I am diving deep into React.js and Next.js to master modern web development practices, and I look forward to exploring even more cutting-edge frameworks and tools. My goal is to build efficient, scalable, and user-friendly web applications that provide seamless user experiences.
-
-                            I believe in the power of learning and constantly challenging myself to grow. Whether it's through solving complex coding problems or contributing to meaningful projects, I aim to make a positive impact through technology.
+Currently, I’m diving deep into React.js and Next.js to master modern web development practices. My goal is to build scalable, user-friendly web applications that offer seamless experiences. I’m always eager to learn new technologies, solve coding challenges, and contribute to impactful projects.
                         </p>
                     </motion.div>
                 </div>

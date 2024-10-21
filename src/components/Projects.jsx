@@ -83,51 +83,54 @@ const Projects = () => {
     const filteredProjects = selectedLanguage === "All" ? projects : projects.filter(project => project.language === selectedLanguage)
 
     return (
-        <div className="w-full p-8 py-16 px-10 bg-blue-950">
-            <div className="mb-8 flex space-x-4 justify-center">
-                {languages.map((language, index) => (
-                    <button
-                        key={index}
-                        className={`px-4 py-2 text-white rounded-full ${selectedLanguage === language ? 'bg-blue-800' : 'bg-gray-700'}`}
-                        onClick={() => setSelectedLanguage(language)}
-                    >
-                        {language}
-                    </button>
-                ))}
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all">
-                {filteredProjects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden p-6 hover:shadow-xl transition duration-300"
-                    >
-                        <h3 className="text-2xl font-semibold text-blue-950 mb-4">
-                            {project.title}
-                        </h3>
-                        <p className="text-gray-600 mb-4">{project.description}</p>
-                        <div className="flex justify-between items-center">
-                            <a
-                                href={project.demoLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-950 font-bold hover:text-blue-700 transition"
-                            >
-                                Live Demo
-                            </a>
-                            <a
-                                href={project.codeLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-blue-950 font-bold hover:text-blue-700 transition"
-                            >
-                                GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                ))}
-            </div>
+        <div className="w-full p-6 sm:p-8 md:py-16 md:px-10 bg-blue-950">
+        <div className="mb-6 sm:mb-8 flex flex-wrap gap-2 justify-center">
+          {languages.map((language, index) => (
+            <button
+              key={index}
+              className={`px-3 sm:px-4 py-1 sm:py-2 text-white rounded-full ${
+                selectedLanguage === language ? 'bg-blue-800' : 'bg-gray-700'
+              }`}
+              onClick={() => setSelectedLanguage(language)}
+            >
+              {language}
+            </button>
+          ))}
         </div>
+      
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 transition-all">
+          {filteredProjects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden p-4 sm:p-6 hover:shadow-xl transition duration-300"
+            >
+              <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-3 sm:mb-4">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 mb-3 sm:mb-4">{project.description}</p>
+              <div className="flex justify-between items-center">
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-950 font-bold hover:text-blue-700 transition"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href={project.codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-950 font-bold hover:text-blue-700 transition"
+                >
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
     );
 };
 
