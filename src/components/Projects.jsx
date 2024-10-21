@@ -1,4 +1,16 @@
 import React, { useState } from 'react';
+import img1 from '../assets/images/bloctopia.jpg';
+import img2 from '../assets/images/upwork.jpg';
+import img3 from '../assets/images/apple.jpg';
+import img4 from '../assets/images/qr code.jpg';
+import img5 from '../assets/images/text to speech.jpg';
+import img6 from '../assets/images/todo.jpg';
+import img7 from '../assets/images/Strong-Password-Generator.jpg';
+import img8 from '../assets/images/currency convertor.jpg';
+import img9 from '../assets/images/Age calculaotor.JPG';
+import img10 from '../assets/images/bloctopia.jpg';
+
+
 
 const Projects = () => {
     const languages = ['All', 'HTML & CSS', 'JavaScript', 'React'];
@@ -6,6 +18,7 @@ const Projects = () => {
     const projects = [
         {
             title: "Blocktopia.com",
+            image: img1,
             description: "This is the Crypto website clone called Bloctopia,this will help me to  learn about flex.",
             demoLink: "http://blocktopia.com-shaheer.surge.sh/",
             codeLink: "https://github.com/Sherrrrryyy/Bloktopia.com",
@@ -107,6 +120,7 @@ const Projects = () => {
               <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-3 sm:mb-4">
                 {project.title}
               </h3>
+              <img src={project.image} alt="" />
               <p className="text-gray-600 mb-3 sm:mb-4">{project.description}</p>
               <div className="flex justify-between items-center">
                 <a
