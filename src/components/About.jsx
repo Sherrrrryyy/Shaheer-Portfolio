@@ -29,9 +29,9 @@ const About = () => {
                         transition={{ type: 'spring', stiffness: 50 }}
                     >
                         <p className="text-black font-medium text-1xl ">
-                        I'm a passionate web developer focusing on full-stack development, particularly the MERN stack (MongoDB, Express.js, React.js, Node.js). I have strong front-end skills in HTML, CSS, JavaScript (ES5 & ES6), and experience with frameworks like Bootstrap and Tailwind CSS for creating responsive, visually appealing web applications. I also have hands-on experience with Firebase for backend services and user authentication.
+                            I'm a passionate web developer focusing on full-stack development, particularly the MERN stack (MongoDB, Express.js, React.js, Node.js). I have strong front-end skills in HTML, CSS, JavaScript (ES5 & ES6), and experience with frameworks like Bootstrap and Tailwind CSS for creating responsive, visually appealing web applications. I also have hands-on experience with Firebase for backend services and user authentication.
 
-Currently, I’m diving deep into React.js and Next.js to master modern web development practices. My goal is to build scalable, user-friendly web applications that offer seamless experiences. I’m always eager to learn new technologies, solve coding challenges, and contribute to impactful projects.
+                            Currently, I’m diving deep into React.js and Next.js to master modern web development practices. My goal is to build scalable, user-friendly web applications that offer seamless experiences. I’m always eager to learn new technologies, solve coding challenges, and contribute to impactful projects.
                         </p>
                     </motion.div>
                 </div>
