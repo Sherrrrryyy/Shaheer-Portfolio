@@ -16,11 +16,11 @@ function Navbar() {
     };
   }, []);
 
-  const textColor = scrollPosition > 100 ? 'text-white' : 'text-blue-950';
+  const textColor = scrollPosition > 100 ? 'text-blue-950' : 'text-black';
   return (
     <>
       <div className="max-w-full h-20 sticky top-0 bg-transparent z-50 backdrop-blur-lg shadow-md">
-        <div className="p-5 flex justify-center items-center">
+        <div className="p-5 flex text-center justify-center ml-5 ">
           <h1 className={`text-4xl font-bold text-black hover:text-white ${textColor} transition-all `} >
             Shaheer{"</>"}
           </h1>

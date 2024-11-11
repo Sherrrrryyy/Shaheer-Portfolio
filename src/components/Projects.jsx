@@ -124,7 +124,8 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden p-4 sm:p-6 hover:shadow-xl transition duration-300"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105
+ bg-white rounded-lg shadow-lg overflow-hidden p-4 sm:p-6 hover:shadow-xl"
             >
               <h3 className="text-xl sm:text-2xl font-semibold text-blue-950 mb-3 sm:mb-4">
                 {project.title}
